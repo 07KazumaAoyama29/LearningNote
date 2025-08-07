@@ -37,3 +37,21 @@ django-admin startproject ll_project .
 ```bash
 python manage.py migrate
 ```
+
+## 管理サイトの日本語化
+settings.pyを、以下に変更する
+```python
+# Internationalization
+# https://docs.djangoproject.com/en/5.2/topics/i18n/
+
+LANGUAGE_CODE = 'ja'
+
+TIME_ZONE = 'Asia/Tokyo'
+
+USE_I18N = True
+
+USE_TZ = True
+
+
+# Static files (CSS, JavaScript, Images)
+```
